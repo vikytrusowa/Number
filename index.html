@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1"/>
+    <title>Номер</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="style/css/reset.css">
+    <link rel="stylesheet" href="style/css/style.css">
+</head>
+<body>
+<header class="header" id="header">
+    <div class="content-container">
+        <div class="header__heading content-row">
+            <a href="#" class="header__logo"><img src="img/logo.svg" alt="Logo" class="header__logo--image"></a>
+            <div class="content-row header__block">
+                <a href="tel:+380999999999" class="header__phone">+38 (099) 999 99 99</a>
+                <a href="#" data-fancybox data-src="#modal" class="header__call">Заказать</a>
+            </div>
+        </div>
+        <div class="header__modal" id="modal">
+            <h4 class="header__subtitle">Заявка</h4>
+            <form>
+                <input class="header__modal--input" placeholder="Имя">
+                <input class="header__modal--input" placeholder="Телефон">
+                <input class="header__modal--input" placeholder="Ваши номера">
+                <a href="#" data-fancybox data-src="#modal-thank" class="content-button header__modal--button js-close">Заказать</a>
+            </form>
+        </div>
+        <div class="header__thank" id="modal-thank">
+            <img src="img/elipse.svg" alt="" class="header__thank--image">
+            <h4 class="header__thank--name">Спасибо за заявку!</h4>
+            <p class="header__thank--info">Наш менеджер свяжется с вами позже</p>
+            <div class="content-row header__thank--social">
+                <a href="#" target="_blank"><img src="img/facebook.png" alt="facebook"></a>
+                <a href="#" target="_blank"><img src="img/instagram.png" alt="instagram"></a>
+            </div>
+        </div>
+    </div>
+    <div class="header__wrap">
+        <div class="content-container content-row header__wrapper">
+            <div class="header__box">
+                <ul class="content-row header__menu">
+                    <li>
+                        <a href="#header" class="header__link header__link--active"> Главная</a>
+                    </li>
+                    <li>
+                        <a href="#advantage" class="header__link">Преимущества</a>
+                    </li>
+                    <li>
+                        <a href="#price" class="header__link">Стоимость</a>
+                    </li>
+                    <li>
+                        <a href="#reviews" class="header__link">Отзывы</a>
+                    </li>
+                </ul>
+                <h1 class="header__title"><span class="header__title--color">Lorem ipsum</span> dolor sit amet,
+                    consecte- tur adipiscing</h1>
+                <p class="header__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eius- mod tempor
+                    incididunt ut labore et dolore magna aliqua. Quis ipsum</p>
+            </div>
+            <div class="form-container header__form">
+                <div class="note"></div>
+                <div class="fields">
+                    <form class=" ajax-contact-form" action="">
+                        <label class="header__label">Ваше имя</label>
+                        <input class="header__input" type="text" name="name" value="" placeholder="Имя">
+                        <label class="header__label">Телефон</label>
+                        <input class="header__input" type="tel" name="tel" value="" placeholder="Телефон">
+                        <label class="header__label">Ваши номера</label>
+                        <input class="header__input header__input--inner" type="text" name="text" value=""
+                               placeholder="Ваши номера">
+                        <a href="#" data-fancybox data-src="#modal-thank" type="submit" name="submit"
+                           class="header__button content-button js-close">Заказать</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="advantage" id="advantage">
+    <div class="content-container">
+        <h2 class="content-title"> Преимущества</h2>
+        <div class="content-row advantage__wrapper">
+            <img src="img/car.png" alt="car" class="advantage__image">
+            <ul class="advantage__list">
+                <li class="content-row advantage__item">
+                    <img src="img/times.svg" alt="" class="advantage__icon">
+                    <div>
+                        <h3 class="advantage__subtitle">Lorem Ipsum</h3>
+                        <p class="advantage__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis</p>
+                    </div>
+                </li>
+                <li class="content-row advantage__item">
+                    <img src="img/document.svg" alt="" class="advantage__icon">
+                    <div>
+                        <h3 class="advantage__subtitle">Lorem Ipsum</h3>
+                        <p class="advantage__info">Lorem ipsum dolor sit amet, consectetur adipisc-</p>
+                    </div>
+                </li>
+                <li class="content-row advantage__item">
+                    <img src="img/business.svg" alt="" class="advantage__icon">
+                    <div>
+                        <h3 class="advantage__subtitle">Lorem Ipsum</h3>
+                        <p class="advantage__info">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incidi-</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+<section class="price" id="price">
+    <div class="content-container">
+        <h2 class="content-title">Стоимость</h2>
+        <div class="content-row price__wrapper">
+            <div class="price__element">
+                <div class="price__heading">
+                    <span class="price__name">Lorem Ipsum</span>
+                </div>
+                <ul class="price__list">
+                    <li class="price__item content-row"><img src="img/interface.svg" alt="" class="price__icon">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </li>
+                    <li class="price__item content-row"><img src="img/interface.svg" alt="" class="price__icon">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </li>
+                    <li class="price__item content-row"><img src="img/interface.svg" alt="" class="price__icon">Lorem
+                        ipsum dolor sit amet, consectetur
+                    </li>
+                </ul>
+                <span class="price__old">399 грн</span>
+                <span class="price__value">299 грн</span>
+                <a href="#" class="content-button price__button" data-fancybox data-src="#modal">Заказать</a>
+            </div>
+            <div class="price__element">
+                <div class="price__heading">
+                    <span class="price__name">Lorem Ipsum</span>
+                </div>
+                <ul class="price__list price__list--inner">
+                    <li class="price__item content-row"><img src="img/interface.svg" alt="" class="price__icon">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </li>
+                    <li class="price__item content-row"><img src="img/interface.svg" alt="" class="price__icon">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </li>
+                    <li class="price__item content-row"><img src="img/interface.svg" alt="" class="price__icon">Lorem
+                        ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                    </li>
+                </ul>
+                <span class="price__old">599 грн</span>
+                <span class="price__value">499 грн</span>
+                <a href="#" class="content-button price__button" data-fancybox data-src="#modal">Заказать</a>
+            </div>
+        </div>
+        <p class="price__info"><span class="price__info--color"> *</span> Lorem ipsum dolor sit amet,</p>
+    </div>
+</section>
+<section class="reviews" id="reviews">
+    <div class="content-container">
+        <h2 class="content-title">Отзывы</h2>
+        <div class="reviews__slider">
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/slider.png" alt="slider" class="reviews__image"></div>
+                    <div class="swiper-slide"><img src="img/slider.png" alt="slider" class="reviews__image"></div>
+                    <div class="swiper-slide"><img src="img/slider.png" alt="slider" class="reviews__image"></div>
+                    <div class="swiper-slide"><img src="img/slider.png" alt="slider" class="reviews__image"></div>
+                    <div class="swiper-slide"><img src="img/slider.png" alt="slider" class="reviews__image"></div>
+                    <div class="swiper-slide"><img src="img/slider.png" alt="slider" class="reviews__image"></div>
+                </div>
+
+
+            </div>
+            <div class="reviews__prev"><img src="img/arrows.svg" alt=""></div>
+            <div class="reviews__next"><img src="img/arrows.svg" alt=""></div>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+    <div class="content-container content-row footer__wrapper">
+        <img src="img/footer-logo.svg" alt="logo" class="footer__logo">
+        <a class="footer__link" href="#header">Наверх <img src="img/arrowsoutline.svg" alt="" class="footer__icon"></a>
+    </div>
+</footer>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
+<script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="js/main.js"></script>
+<script src="contactform.js"></script>
+</body>
+</html>
