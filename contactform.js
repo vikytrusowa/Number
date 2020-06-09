@@ -9,7 +9,7 @@ url: "contact.php",
 data: str,
 success: function(msg) {
 if(msg == 'OK') {
-
+    result = '<p>Ваш заказ принят</p>';
 $(".fields").hide();
 } else {
 result = msg;

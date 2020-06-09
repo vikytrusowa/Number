@@ -22,9 +22,9 @@ var mySwiper = new Swiper('.swiper-container', {
     }
 
 })
-$('.js-close').click(function(){
-    $.fancybox.close();
-});
+// $('.js-close').click(function(){
+//     $.fancybox.close();
+// });
 $('.header__link').click(function () {
     var target = $(this).attr('href');
     $('html, body').animate({scrollTop: $(target).offset().top}, 1000);
